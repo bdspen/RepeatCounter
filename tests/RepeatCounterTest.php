@@ -16,5 +16,18 @@
             //Assert
             $this->assertEquals("a", $result);
         }
+        function test_countRepeats_returnOne()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input_one = "a";
+            $input_two = "a";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_two);
+
+            //Assert
+            $this->assertEquals("1", $result);
+        }
     }
  ?>
