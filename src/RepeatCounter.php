@@ -6,12 +6,13 @@
         {
             $keyword = strtolower($input_one);
             $string_to_search = strtolower($input_two);
-            $exp_string_to_search = explode(" ", $string_to_search);
+            $expl_string_to_search = explode(" ", $string_to_search);
 
-            if (in_array($keyword, $exp_string_to_search))
+            foreach($expl_string_to_search as $word)
             {
-                $output = "1";
+                $output += substr_count($keyword, $word);
             }
+
             return $output;
         }
     }
