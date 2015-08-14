@@ -29,7 +29,7 @@
             //Assert
             $this->assertEquals("1", $result);
         }
-        function test_countRepeats_returnOne()
+        function test_countRepeats_caseTest()
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
