@@ -1,0 +1,27 @@
+1) Test if program will return input. The program will only be
+returning the user input. This is the simplest way  to test that the program
+is getting input and returning an output. A single character is also the simplest
+string to match.
+Input: $input = "a";
+Output: $output = "a";
+
+2)Test if the program will count single string matching inputs and return a count.
+This will be testing wether the program can count a match as 1.
+Input: $input_one = "a";
+       $input_two = "a";
+Output: $output = "1";
+
+Test if the program can handle upper or mixed case entries.
+Input: $input_one = "a";
+       $input_two = "A";
+Output: "1"
+
+4)Test if the program can match the user word with multiple word entries.
+Input: $input_one = "a";
+       $input_two = "A car drives down the road"
+Output: "1"
+
+5)Test if the program can make multiple matches.
+Input: $input_one = "a";
+       $input_two = "A car drives down a road called a street";
+Output: "3";
