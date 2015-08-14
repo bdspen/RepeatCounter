@@ -11,10 +11,10 @@
             $input = "a";
 
             //Act
-            $result = $test_RepeatCounter->countRepeats($input);
+            $result = $test_RepeatCounter->countRepeats($input_one, $input_twp);
 
             //Assert
-            $this->assertEquals("a", $result);
+            $this->assertEquals("1", $result);
         }
         function test_countRepeats_returnOne()
         {

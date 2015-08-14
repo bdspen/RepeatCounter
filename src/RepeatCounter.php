@@ -2,9 +2,13 @@
 
     class RepeatCounter
     {
-        function countRepeats($input_one)
+        function countRepeats($input_one, $input_two)
         {
-            return ($input_one);
+            if ($input_one == $input_two)
+            {
+                $output = "1";
+            }
+            return $output;
         }
     }
  ?>
