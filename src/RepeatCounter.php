@@ -5,14 +5,14 @@
         function countRepeats($input_one, $input_two)
         {
             $keyword = strtolower($input_one);
-            $string_to_search = strtolower($input_two);
-            $expl_string_to_search = explode(" ", $string_to_search);
+            $string_to_search = explode(" ", strtolower($input_two));
+            $output = 0;
 
-            foreach($expl_string_to_search as $word)
-            {
-                $output += substr_count($keyword, $word);
-            }
-
+            foreach($string_to_search as $word)
+                 if($word == $keyword)
+                 {
+                     $output = $output + 1;
+                 }
             return $output;
         }
     }
