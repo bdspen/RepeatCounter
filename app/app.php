@@ -13,7 +13,8 @@
     $app->get("/results", function() use ($app){
         $results = new RepeatCounter;
         $outcome = $results->countRepeats($_GET['search_word'], $_GET['sentence']);
-        return $app['twig']->render('results.html.twig', array('result' => $outcome));
+        return $app['twig']->render('results.html.twig', array('result' => $outcome,
+        'search_word' => $_GET['search_word'], 'sentence' => $_GET['sentence']));
     });
     return $app;
 ?>

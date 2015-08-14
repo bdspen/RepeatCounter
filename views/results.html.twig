@@ -1,9 +1,11 @@
 <html>
     <head><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+          <link rel="stylesheet" href="/styles.css">
         <title>Results</title>
     </head>
     <body>
-        <h1>Your word was found {{ result }} times</h1>
+        <h1>"{{ search_word }}" was found {{ result }} times in the phrase:</h1>
+        <h4>"{{ sentence }}"</h4>
         <div class= 'container'>
             <form action="/">
                     <div class= 'button'>
